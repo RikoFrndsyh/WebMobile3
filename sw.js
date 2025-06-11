@@ -4,11 +4,11 @@ self.addEventListener("install", async event => {
   // Menyimpan resource penting (offline-first)
   await cache.addAll([
     "/",
-    "index.html",
-    "beranda.html",
-    "css/style.css",
-    "img/riko.png",
-    "app.js",
+    ".index.html",
+    ".beranda.html",
+    ".css/style.css",
+    ".img/riko.png",
+    ".app.js",
     "https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css",
     "https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
   ]);
