@@ -10,6 +10,8 @@ self.addEventListener("install", event => {
         "./css/style.css",
         "./img/riko.png",
         "./app.js"
+        "./https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css",
+        "./https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
       ]);
     } catch (err) {
       console.error("Gagal menyimpan cache:", err);
