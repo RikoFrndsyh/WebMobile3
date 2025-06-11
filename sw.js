@@ -23,14 +23,10 @@ self.addEventListener("install", event => {
   })());
 });
 
-self.addEventListener("activate", event => {
-  // Menunggu sampai proses pembersihan cache lama selesai
-  event.waitUntil(
-    caches.keys().then(keys => {
-      return Promise.all(
-        // Menghapus semua cache lama yang namanya tidak cocok dengan versi sekarang
-        keys.filter(key => key !== "siakad-riko-cache").map(key => caches.delete(key))
-      );
-    })
-  );
+self.addEventListener("fetch", event => {
+  event.respondWith(
+    caches.match(event.request).then(cachedResponse => {
+      return cachedResponse || fetch(event.request);
+    })
+  );
 });
