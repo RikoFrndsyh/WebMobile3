@@ -1,6 +1,6 @@
 self.addEventListener("install", event => {
   event.waitUntil((async () => {
-    const cache = await caches.open("pwa-assets");
+    const cache = await caches.open("siakad-riko-cache");
     try {
       await cache.addAll([
       "/",
