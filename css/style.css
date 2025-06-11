@@ -1,0 +1,24 @@
+body {
+  background-color: #8aa5eb; /* Memberi warna biru muda ke seluruh latar belakang halaman */
+  font-family: 'Segoe UI', sans-serif; /* Mengatur font */
+}
+
+h1, h5 {
+  font-weight: 600; /* Mengatur heading */
+}
+
+footer {
+  font-size: 14px; /* Mengatur ukuran teks pada bagian footer */
+}
+
+.card {
+  border-radius: 10px; /* Membuat sudut komponen card */
+}
+
+.navbar-brand {
+  font-weight: bold; /*  teks bold pada navbar brand */
+}
+
+img {
+  object-fit: cover; /* Mengatur agar gambar memenuhi kontainer */
+}
